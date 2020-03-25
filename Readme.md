@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валентина Бобух](https://up.htmlacademy.ru/adaptive/19/user/1215839).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://github.com/Luckymalina).
 
 ---
 
