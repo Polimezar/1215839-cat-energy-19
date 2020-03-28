@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item ">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="catalog.html">Католог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="title">Подбор программы</h1>
+      <p class="title-text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <form class="question" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="question__field">
+          <label class="form-field">
+            <span class="form-field__text">Имя:*</span>
+            <input class="form-field__control">
+          </label>
+          <label class="form-field">
+            <span class="form-field__text">Вес (кг):*</span>
+            <input class="form-field__control">
+          </label>
+          <label class="form-field">
+            <span class="form-field__text">Возраст (лет):</span>
+            <input class="form-field__control">
+          </label>
+        </fieldset>
+        <fieldset class="question__field question__field--line">
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-2" tabindex="0">Набор массы</label>
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="question__field">
+          <h3 class="title">Контактные данные (владельца кота)</h3>
+          <label class="form-field form-field--ident">
+            <span class="form-field__text">E-mail:*</span>
+            <input class="form-field__control">
+          </label>
+          <label class="form-field form-field--ident">
+            <span class="form-field__text">Телефон:*</span>
+            <input class="form-field__control">
+          </label>
+        </fieldset>
+        <div class="question__field question__field--ident">
+          <h3 class="title">Комментарий</h3>
+          <textarea class="question__textarea" ></textarea>
+        </div>
+        <fieldset class="question__field">
+          <h3 class="title">Дополнительно</h3>
+          <input type="checkbox">
+          <label class="form-type form-type--checkbox">Сахарозаменитель</label>
+          <input type="checkbox">
+          <label class="form-type form-type--checkbox">Питьевая вода</label>
+          <input type="checkbox">
+          <label class="form-type form-type--checkbox">Молоко</label>
+          <input type="checkbox">
+          <label class="form-type form-type--checkbox">Витамины</label>
+        </fieldset>
+        <button class="btn question__btn">Отправить заявку</button>
+        <p class="question__text"><sup>*</sup>— Обязательные поля</p>
+      </form>
+      <section class="map">
+        <!--Здесь будет карта-->
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__column">
+        <a class="footer-logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип с назвнаием">
+        </a>
+      </div>
+      <div class="page-footer__column">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка вк--> </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка инст--> </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка фб--> </a>
+            </li>
+          </ul>
+      </div>
+      <div class="page-footer__column">
+        <a class="developer" href="#">
+          <span class="developer__name">HTML Academy</span>
+          <!--свг иконка академии-->
+      </div>
+    </footer>
+  </body>
+</html>
