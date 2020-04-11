@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="page-header__block">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" alt="Логотип сайта">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item ">
-                <a href="index.html">Главная</a>
+              <li class="site-list__item">
+                <a href="index.html" class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a href="catalog.html">Католог продукции</a>
+                <a href="catalog.html"class="site-list__link" >Католог продукции</a>
               </li>
-              <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
+              <li class="site-list__item" >
+                <a href="form.html"class="site-list__link" >Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -36,7 +38,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <table class="product__options">
@@ -59,7 +61,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             <table class="product__options">
@@ -82,7 +84,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <table class="product__options">
@@ -105,7 +107,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             <table class="product__options">
@@ -128,7 +130,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             <table class="product__options">
@@ -151,7 +153,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
             <table class="product__options">
@@ -174,7 +176,7 @@
         <div class="catalog__column">
           <article class="product">
             <picture>
-              <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+              <img class="product__image" src="https://via.placeholder.com/140x144" alt="Продукт">
             </picture>
             <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             <table class="product__options">
@@ -202,8 +204,8 @@
           </section>
         </div>
         <div class="catalog__column">
-          <section class="add-product">
-            <h2 class="title">Дополнительные товары</h2>
+          <section class="add-products">
+            <h2 class="title-add">Дополнительные товары</h2>
             <ul class="additionally">
               <li class="additionally__item">
                 <h3 class="additionally__title">Сахарозаменитель</h3>
@@ -213,7 +215,7 @@
                     <td>200 Р.</td>
                   </tr>
                 </table>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn__add" href="#">Заказать</a>
               </li>
               <li class="additionally__item">
                 <h3 class="additionally__title">Питьевая вода</h3>
@@ -223,7 +225,7 @@
                     <td>50 Р.</td>
                   </tr>
                 </table>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn__add" href="#">Заказать</a>
               </li>
               <li class="additionally__item">
                 <h3 class="additionally__title">Молоко</h3>
@@ -233,7 +235,7 @@
                     <td>100 Р.</td>
                   </tr>
                 </table>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn__add" href="#">Заказать</a>
               </li>
               <li class="additionally__item">
                 <h3 class="additionally__title">Витамины</h3>
@@ -243,7 +245,7 @@
                     <td>300 Р.</td>
                   </tr>
                 </table>
-                <a class="btn" href="#">Заказать</a>
+                <a class="btn__add" href="#">Заказать</a>
               </li>
             </ul>
           </section>
@@ -252,37 +254,43 @@
           <!--свг иконка-->
           <p class="add-products__proviso">Закажите все  и получите чехол для кота в подарок!</p>
         </div>
-    </section>
-    <section class="invitation">
-      <div class="container">
-        <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
-        <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
-      </div>
-    </section>
-    <section class="map">
-      <!--Здесь будет карта-->
-    </section>
+      </section>
+      <section class="invitation">
+        <div class="container">
+          <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
+          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
+        </div>
+      </section>
+      <section class="map">
+        <!--Здесь будет карта-->
+      </section>
     </main>
     <footer class="page-footer">
       <div class="contaiher">
-        <a class="footer-logo">
-         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип с назвнаием">
-        </a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка вк--> </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка инст--> </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка фб--> </a>
-          </li>
-        </ul>
-        <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developer__name">HTML Academy</span>
-          <!--свг иконка академии-->
-        </a>
+        <div class="page-footer__column">
+          <a class="footer-logo">
+            <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" alt="Логотип с назвнаием">
+          </a>
+        </div>
+        <div class="page-footer__column">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка вк-->vk </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка инст--> inst</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка фб-->fb </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="developer__name">HTML Academy</span>
+            <!--свг иконка академии-->
+          </a>
+        </div>
       </div>
     </footer>
   </body>

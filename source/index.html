@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип сайта">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="page-header__block">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" alt="Логотип сайта">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item ">
-                <a href="index.html">Главная</a>
-              </li>
               <li class="site-list__item site-list__item--active">
-                <a href="catalog.html">Католог продукции</a>
+                <a href="index.html" class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
+                <a href="catalog.html"class="site-list__link" >Католог продукции</a>
+              </li>
+              <li class="site-list__item" >
+                <a href="form.html"class="site-list__link" >Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -35,7 +37,7 @@
           <h2 class="main-block__title">Функциональное питание для котов</h2>
           <p class="main-block__text">Занялся собой? Займись котом!</p>
           <picture class="main-block__picture">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Продукт">
+            <img class="main-block__logo-image" src="https://via.placeholder.com/280x270" alt="Продукт">
           </picture>
           <a href="form.html" class="main-block__button button">Подобрать программу</a>
         </section>
@@ -74,28 +76,28 @@
           <ul class="instruction__list">
             <li class="instruction__item instruction__item--healthy">
               <div class="instruction__illustration">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Лист">
+                <img class="instruction__logo-image" src="https://via.placeholder.com/60x60" alt="Лист">
               </div>
               <p class="instruction__text">
                 Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="instruction__item instruction__item--easy">
               <div class="instruction__illustration">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Способ приготовления">
+                <img class="instruction__logo-image" src="https://via.placeholder.com/60x60" alt="Способ приготовления">
               </div>
               <p class="instruction__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="instruction__item instruction__item--food">
               <div class="instruction__illustration">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Питание">
+                <img class="instruction__logo-image" src="https://via.placeholder.com/60x60" alt="Питание">
               </div>
               <p class="instruction__text">
                 Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
             </li>
             <li class="instruction__item instruction__item--time">
               <div class="instruction__illustration">
-                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Время">
+                <img class="instruction__logo-image" src="https://via.placeholder.com/60x60" alt="Время">
               </div>
               <p class="instruction__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -113,29 +115,27 @@
               <li class="result__item">
                 <div class="result__wrapper">
                   <strong class="result__total">5 кг</strong>
-                  <p class="result__text">снижение веса</p>
+                  <p class="result__text">снижение <br> веса</p>
                 </div>
               </li>
               <li class="result__item">
                 <div class="result__wrapper">
                   <strong class="result__total">60 дней</strong>
-                  <p class="result__text">затрачено  времени</p>
+                  <p class="result__text">затрачено <br> времени</p>
                 </div>
               </li>
             </ul>
             <p class="example__total"><span>Затраты на питание:</span> 15 000 руб.</p>
           </div>
           <div class="comparisons">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Большой кот">
+            <img class="comparisons__logo-image" src="https://via.placeholder.com/311x232" alt="Большой кот">
             <button class="comparisons__btn">Было</button>
             <button class="comparisons__btn">Стало</button>
           </div>
         </section>
         <section class="invitation">
-          <div class="container">
-            <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
-            <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
-          </div>
+          <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
+          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
         </section>
         <section class="map">
           <!--Здесь будет карта-->
@@ -144,24 +144,30 @@
     </main>
     <footer class="page-footer">
       <div class="contaiher">
-        <a class="footer-logo">
-         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип с назвнаием">
-        </a>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка вк--> </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка инст--> </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#"> <!--свг иконка фб--> </a>
-          </li>
-        </ul>
-        <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developer__name">HTML Academy</span>
-          <!--свг иконка академии-->
-        </a>
+        <div class="page-footer__column">
+          <a class="footer-logo">
+            <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" alt="Логотип с назвнаием">
+          </a>
+        </div>
+        <div class="page-footer__column">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка вк-->vk </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка инст--> inst</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#"> <!--свг иконка фб-->fb </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="developer__name">HTML Academy</span>
+            <!--свг иконка академии-->
+          </a>
+        </div>
       </div>
     </footer>
   </body>
