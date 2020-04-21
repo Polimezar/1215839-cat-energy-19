@@ -16,13 +16,13 @@
           </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__list">
+            <li class="main-nav__item ">
               <a href="index.html" class="main-nav__list--link">Главная</a>
             </li>
-            <li class="main-nav__list">
+            <li class="main-nav__item ">
               <a href="catalog.html"class="main-nav__list--link" >Каталог продукции</a>
             </li>
-            <li class="main-nav__list main-nav__list--active" >
+            <li class="main-nav__item main-nav__item--active">
               <a href="form.html"class="main-nav__list--link" >Подбор программы</a>
             </li>
           </ul>
@@ -30,49 +30,53 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="container">
-        <h1 class="title-ident">Подбор программы</h1>
-        <p class="title-text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__field">
-            <label class="form-field">
-              <span class="form-field__text">Имя:*</span>
-              <input class="form-field__control">
+      <h1 class="title-ident">Подбор программы</h1>
+      <p class="title-text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-field">
+          <div class="form__wrapper">
+            <label class="form-label">
+              <span class="form-label__text" >Имя:*</span>
+              <input class="form-label__control" type="text" placeholder="Барсик" required>
             </label>
-            <label class="form-field">
-              <span class="form-field__text">Вес (кг):*</span>
-              <input class="form-field__control">
+            <label class="form-label">
+              <span class="form-label__text" >Вес (кг):*</span>
+              <input class="form-label__control" type="text" placeholder="7" required>
             </label>
-            <label class="form-field">
-              <span class="form-field__text">Возраст (лет):</span>
-              <input class="form-field__control">
+            <label class="form-label">
+              <span class="form-label__text" >Возраст (лет):</span>
+              <input class="form-label__control" type="text" placeholder="7">
             </label>
-          </fieldset>
-          <fieldset class="form__field form__field--line">
-            <input type="radio">
-            <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
-            <input type="radio">
-            <label class="form-type form-type--radio" for="radio-2" tabindex="0">Набор массы</label>
-            <input type="radio">
-            <label class="form-type form-type--radio" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
-          <fieldset class="form__field">
-            <h3 class="title">Контактные данные (владельца кота)</h3>
-            <label class="form-field form-field--ident">
-              <span class="form-field__text">E-mail:*</span>
-              <input class="form-field__control">
-            </label>
-            <label class="form-field form-field--ident">
-            <span class="form-field__text">Телефон:*</span>
-            <input class="form-field__control">
-            </label>
-          </fieldset>
-          <div class="form__field form__field--ident">
-            <h3 class="title">Комментарий</h3>
-            <textarea class="form__textarea" ></textarea>
           </div>
-          <fieldset class="form__field">
-            <h3 class="title">Дополнительно</h3>
+        </fieldset>
+        <fieldset class="form-field form-field--line">
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-2" tabindex="0">Набор массы</label>
+          <input type="radio">
+          <label class="form-type form-type--radio" for="radio-3" tabindex="0">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="form-field">
+          <div class="form__wrapper">
+            <h3 class="form__title">Контактные данные (владельца кота)</h3>
+            <label class="form-label form-label__ident">
+              <span class="form-label__text">E-mail:*</span>
+              <input class="form-label__control" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="form-label form__label__ident">
+            <span class="form-label__text">Телефон:*</span>
+            <input class="form-label__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
+        </fieldset>
+        <div class="form-field form-field--ident">
+          <h3 class="form__title">Комментарий</h3>
+          <textarea class="form__textarea" ></textarea>
+        </div>
+        <fieldset class="form-field">
+          <div class="form__wrapper">
+            <h3 class="form__title">Дополнительно</h3>
             <input type="checkbox">
             <label class="form-type form-type--checkbox">Сахарозаменитель</label>
             <input type="checkbox">
@@ -81,13 +85,13 @@
             <label class="form-type form-type--checkbox">Молоко</label>
             <input type="checkbox">
             <label class="form-type form-type--checkbox">Витамины</label>
-          </fieldset>
-          <button class="btn form__btn">Отправить заявку</button>
-          <p class="form__text"><sup>*</sup>— Обязательные поля</p>
-        </form>
-      </div>
+          </div>
+        </fieldset>
+        <button class="button form__button">Отправить заявку</button>
+        <p class="form__text"><sup>*</sup>— Обязательные поля</p>
+      </form>
       <section class="invitation">
-        <div class="container">
+        <div class="invitation__wrapper">
           <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
           <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
         </div>
