@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.invitation__wrapper {
+    display: flex;
+}
+
 .invitation__title {
     width: 125px;
     font-size: 16px;
@@ -22,4 +26,60 @@
     color: #444444;
     padding-top: 31px;
     margin: 0
+}
+
+@media (min-width: 768px) {
+    .invitation {
+        display: flex;
+        padding: 60px 0;
+    }
+
+    .invitation__wrapper {
+        display: flex;
+        min-width: 768px;
+        justify-content: space-between;
+    }
+
+    .invitation__title {
+        width: 154px;
+        font-size: 20px;
+        padding-left: 71px;
+        line-height: 1.25;
+    }
+
+    .invitation__text {
+        width: 180px;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.25;
+        padding-right: 72px;
+    }
+
+    .invitation__text span {
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .invitation {
+        position: absolute;
+    }
+
+    .invitation__wrapper {
+        min-width: 570px;
+        min-height: 201px;
+        background-color: #ffffff;
+        margin-left: 110px;
+    }
+
+    .invitation__title {
+        padding-left: 75px;
+        padding-top: 69px;
+    }
+
+    .invitation__text {
+        padding-right: 90px;
+        padding-top: 64px;
+    }
 }
