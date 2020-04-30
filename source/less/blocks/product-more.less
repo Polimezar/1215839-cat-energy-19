@@ -1,9 +1,7 @@
 .product-more {
-    width: 320px;
+    position: relative;
+    width: 280px;
     height: 210px;
-    border-bottom: 1px solid #f2f2f2;
-    border-top: 1px solid #f2f2f2;
-    padding-bottom: 15px;
 }
 
 .product-more__title {
@@ -18,7 +16,7 @@
 }
 
 .product-more__text {
-    font-family: Arial;
+    font-family: "Arial", "Tahoma", sans-serif;
     font-size: 12px;
     font-weight: normal;
     text-align: center;
@@ -31,8 +29,19 @@
 .product-more .button--light {
     background-color: #f2f2f2;
     color: #444444;
-    padding: 8px 97px 10px 94px;
-    margin-left: 20px;
+}
+
+.product-more::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+    background: #ffffff url(../img/icon-plus.svg) no-repeat center;
 }
 
 @media (min-width: 768px) {
@@ -41,8 +50,6 @@
         height: 431px;
         border: 1px solid #cdcdcd;
         padding-bottom: 0;
-        margin-top: 70px;
-        margin-left: 30px;
     }
 
     .product-more__title {
@@ -57,46 +64,39 @@
         font-size: 16px;
         width: 167px;
         padding-top: 28px;
-        padding-bottom: 85px;
+        padding-bottom: 70px;
         padding-left: 80px;
     }
 
     .product-more .button--light {
+        width: 280px;
         background-color: #f2f2f2;
         color: #444444;
-        padding: 8px 87px 10px 81px;
-        margin-left: 38px;
+        margin-left: 27px;
+    }
+
+    .product-more::after {
+        top: 52px;
+        width: 60px;
+        height: 60px;
     }
 }
 
 @media (min-width: 1300px) {
     .product-more {
         width: 245px;
-        height: 431px;
-        border: 1px solid #cdcdcd;
-        padding-bottom: 0;
-        margin-top: 55px;
-        margin-left: 40px;
     }
 
     .product-more__title {
-        width: 134px;
-        padding-top: 166px;
-        padding-left: 56px;
+        padding-left: 58px;
     }
 
     .product-more__text {
-        font-size: 16px;
-        width: 165px;
-        padding-top: 28px;
-        padding-bottom: 85px;
+        padding-bottom: 80px;
         padding-left: 40px;
     }
 
     .product-more .button--light {
-        background-color: #f2f2f2;
-        color: #444444;
-        padding: 13px 39px 12px 41px;
-        margin-left: 38px;
+        width: 190px;
     }
 }
