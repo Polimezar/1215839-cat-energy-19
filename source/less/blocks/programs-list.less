@@ -1,13 +1,11 @@
-.programs-list {
-    margin-top: 186px;
-    width: 320px;
-}
-
-.programs-list--wrapper {
+.programs-list__wrapper {
+    width: 280px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .programs-list__items {
@@ -20,11 +18,11 @@
 
 @media (min-width: 768px) {
     .programs-list {
-        width: 768px;
         margin: 0;
     }
 
-    .programs-list--wrapper {
+    .programs-list__wrapper {
+        width: 708px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -38,11 +36,8 @@
 }
 
 @media (min-width: 1300px) {
-    .programs-list {
+    .programs-list__wrapper {
         width: 1300px;
-    }
-
-    .programs-list--wrapper {
         padding: 0;
         flex-wrap: inherit;
     }

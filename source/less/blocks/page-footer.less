@@ -1,27 +1,28 @@
 .page-footer {
-    width: 320px;
-    height: 236px;
+    min-height: 236px;
     background-color: #f2f2f2;
 }
 
 .page-footer__wrapper {
+    width: 280px;
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-footer__logo-image {
+    width: 280px;
     padding: 35px 0;
     border-bottom: solid 1px #e2e2e2;
     display: block;
-    width: 280px;
 }
 
 @media (min-width: 768px) {
     .page-footer {
-        width: 768px;
-        height: 94px;
+        min-height: 94px;
         padding: 30px 0;
     }
 
@@ -41,13 +42,12 @@
 
 @media (min-width: 1300px) {
     .page-footer {
-        width: 1300px;
-        height: 150px;
+        min-height: 150px;
     }
 
     .page-footer__wrapper {
         width: 1300px;
-        height: 150px;
+        min-height: 150px;
         display: flex;
     }
 

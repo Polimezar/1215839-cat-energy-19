@@ -1,12 +1,14 @@
 .page-header {
     display: block;
-    width: 320px;
 }
 
 .page-header__wrapper {
     display: block;
+    width: 280px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-header--preview::after {
@@ -24,13 +26,12 @@
 
 @media (min-width: 768px) {
     .page-header {
-        width: 768px;
     }
 
     .page-header__wrapper {
         padding-left: 30px;
         padding-right: 30px;
-        max-width: 768px;
+        width: 708px;
     }
 
     .page-header--preview::after  {
@@ -41,11 +42,10 @@
 
 @media (min-width: 1300px) {
     .page-header {
-        width: 1300px;
     }
 
     .page-header__wrapper {
-        max-width: 1300px;
+        width: 1220px;
         padding-top: 53px;
         padding-left: 40px;
         padding-right: 40px;
@@ -57,7 +57,7 @@
         min-height: 696px;
         top: 0;
         right: 0;
-        left: inherit;
+        left: 50%;
         background-image: url(../img/index-background-desktop@1x.jpg);
         background-color: #63a73a;
         background-position: 0%;

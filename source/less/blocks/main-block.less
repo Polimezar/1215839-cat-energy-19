@@ -1,15 +1,17 @@
 .main-block {
-    width: 320px;
-    height: 305px;
+    min-height: 305px;
 }
 
 .main-block__wrapper {
+    width: 280px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-block__title {
-    height: 74px;
+    min-height: 74px;
     font-size: 36px;
     font-weight: normal;
     line-height: 36px;
@@ -20,7 +22,7 @@
 }
 
 .main-block__text {
-    height: 16px;
+    min-height: 16px;
     line-height: 1;
     text-align: center;
     color: white;
@@ -31,21 +33,20 @@
 }
 
 @media (min-width: 768px) {
-    .main-block {
-        min-width: 768px;
-        min-height: 828px;
+    .main-block__wrapper {
+        min-width: 708px;
+        min-height: 844px;
     }
 
-    .main-block__wrapper {
+    .main-block {
         padding-left: 120px;
-        margin-right: 30px;
-        min-height: 844px;
+        min-height: 828px;
         position: relative;
     }
 
     .main-block__title {
         width: 415px;
-        height: 122px;
+        min-height: 122px;
         font-size: 60px;
         line-height: 1;
         text-align: left;
@@ -74,22 +75,22 @@
     }
 
     .main-block__button {
+        font-size: 20px;
+        width: 45%;
         padding: 16px 27px;
     }
 }
 
 @media (min-width: 1300px) {
     .main-block {
-        width: 1220px;
         min-height: 530px;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-bottom: 110px;
+        margin-bottom: 80px;
+        padding-left: 0;
     }
 
     .main-block__wrapper {
         padding-left: 80px;
-        width: 1140px;
+        width: 1200px;
         min-height: 475px;
         padding-top: 55px;
         position: relative;
@@ -101,9 +102,10 @@
 
     .main-block__logo-image {
         margin: 0;
-        height: 499px;
+        min-height: 499px;
         position: absolute;
         display: block;
-        left: 35%;
+        left: 34.5%;
+        top: -30px
     }
 }
