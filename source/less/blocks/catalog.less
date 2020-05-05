@@ -1,7 +1,36 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
     .catalog {
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 768px;
+        margin-bottom: 40px;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .catalog__column {
+        margin-right: 30px;
+        margin-top: 110px;
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .catalog {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .catalog__column {
+        width: 245px;
+        margin-bottom: 30px;
+        margin-top: 110px;
+        padding: 0 40px;
+        margin-right: 0;
     }
 }

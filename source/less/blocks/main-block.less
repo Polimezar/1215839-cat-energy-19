@@ -1,10 +1,17 @@
 .main-block {
-    width: 320px;
-    height: 305px;
+    min-height: 305px;
+}
+
+.main-block__wrapper {
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-block__title {
-    height: 74px;
+    min-height: 74px;
     font-size: 36px;
     font-weight: normal;
     line-height: 36px;
@@ -15,7 +22,7 @@
 }
 
 .main-block__text {
-    height: 16px;
+    min-height: 16px;
     line-height: 1;
     text-align: center;
     color: white;
@@ -25,92 +32,80 @@
     text-transform: uppercase;
 }
 
-.main-block__logo-image {
-    padding-left: 20px;
-}
-
-.main-block__button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #69b738;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding-top: 14px;
-    padding-bottom: 11px;
-    margin-left: 20px;
-    margin-top: 3px;
-}
-
 @media (min-width: 768px) {
+    .main-block__wrapper {
+        min-width: 708px;
+        min-height: 844px;
+    }
+
     .main-block {
-        min-width: 768px;
+        padding-left: 120px;
         min-height: 828px;
+        position: relative;
     }
 
     .main-block__title {
         width: 415px;
-        height: 122px;
+        min-height: 122px;
         font-size: 60px;
         line-height: 1;
         text-align: left;
         color: #111111;
         padding-top: 29px;
-        padding-left: 120px;
+        margin-bottom: 45px;
     }
 
     .main-block__text {
         font-size: 20px;
         text-align: left;
         color: #111111;
-        padding-top: 33px;
-        padding-bottom: 20px;
-        padding-left: 118px;
+        padding-top: 0;
+        padding-bottom: 45px;
     }
 
     .main-block__logo-image {
-        width: 709px;
-        height: 609px;
-        padding-left: 29px;
+        width: auto;
+        height: auto;
+        position: absolute;
+        padding: 0;
+        margin: 0 auto;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
     }
 
     .main-block__button {
-        width: 18.9%;
-        height: 52px;
-        padding: 0;
+        font-size: 20px;
+        width: 45%;
+        padding: 16px 27px;
     }
 }
 
 @media (min-width: 1300px) {
     .main-block {
-        min-height: 668px;
+        min-height: 530px;
+        margin-bottom: 80px;
+        padding-left: 0;
+    }
+
+    .main-block__wrapper {
+        padding-left: 80px;
+        width: 1200px;
+        min-height: 475px;
+        padding-top: 55px;
+        position: relative;
     }
 
     .main-block__title {
-        padding-top: 113px;
-        padding-left: 193px;
-    }
-
-    .main-block__text {
-        padding-top: 33px;
-        padding-bottom: 53px;
-        padding-left: 190px;
+        padding-top: 0;
     }
 
     .main-block__logo-image {
-        width: 552px;
-        height: 499px;
-        margin: 0 auto 5px;
-        display: block;
+        margin: 0;
+        min-height: 499px;
         position: absolute;
-        left: 35%;
-        top: 120px;
-    }
-
-    .main-block__button {
-        width: 18.9%;
-        height: 52px;
-        line-height: 3;
-        margin-left: 190px;
+        display: block;
+        left: 34.5%;
+        top: -30px
     }
 }

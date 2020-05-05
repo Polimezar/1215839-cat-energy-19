@@ -1,5 +1,10 @@
 .page-header__wrapper {
-    width: 320px;
+    display: block;
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-header--preview::after {
@@ -17,11 +22,9 @@
 
 @media (min-width: 768px) {
     .page-header__wrapper {
-        display: flex;
-        width: 768px;
-        justify-content: space-between;
-        padding: 24px 30px 1px;
-        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 708px;
     }
 
     .page-header--preview::after  {
@@ -31,10 +34,14 @@
 }
 
 @media (min-width: 1300px) {
+    .page-header {
+    }
+
     .page-header__wrapper {
-        width: 1300px;
-        padding: 0;
+        width: 1220px;
         padding-top: 53px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .page-header--preview::after {

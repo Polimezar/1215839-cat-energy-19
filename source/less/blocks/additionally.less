@@ -1,19 +1,21 @@
 .additionally {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
     list-style-type: none;
+    border-top: 1px solid #d9d9d9;
 }
 
 .additionally__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 15px;
 }
 
 .additionally__title {
+    width: 280px;
     font-size: 16px;
     font-weight: normal;
     color: #222222;
@@ -21,18 +23,23 @@
 }
 
 .additionally__info {
-    font-family: Arial;
+    width: 280px;
+    font-family: "Arial", "Tahoma", sans-serif;
     line-height: 1;
-    padding-top: 13px;
+    padding-bottom: 15px;
+}
+
+.additionally__info td:last-child {
+    text-align: right;
 }
 
 @media (min-width: 768px) {
     .additionally {
         width: 708px;
-        padding-left: 30px;
         padding-right: 30px;
         margin: 0;
         list-style-type: none;
+        border: none;
     }
 
     .additionally__item {
@@ -51,33 +58,39 @@
     }
 
     .additionally__info {
-        padding-bottom: 26px;
-        padding-top: 0;
+        font-size: 16px;
+        padding-bottom: 18px;
     }
 
     .additionally__button {
         width: 633px;
         margin: 0;
     }
+
+    .additionally__info td:first-child {
+        text-align: right;
+    }
+
+    .additionally__info td:last-child {
+        width: 33%;
+    }
 }
 
 @media (min-width: 1300px) {
     .additionally {
         width: 895px;
-        padding-left: 110px;
-        padding-right: 80px;
+        padding-left: 0;
+        padding-right: 0;
         margin: 0;
         list-style-type: none;
     }
 
     .additionally__item {
-        border-top: 1px solid #cdcdcd;
+        min-height: 40px;
         border-left: none;
+        padding: 10px 0px;
+        align-items: baseline;
         border-right: none;
-        padding: 28px 35px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .additionally__title {
@@ -93,5 +106,9 @@
     .additionally__button {
         max-width: 29.5%;
         margin: 0;
+    }
+
+    .additionally__info td:first-child {
+        text-align: left;
     }
 }
