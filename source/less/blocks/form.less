@@ -94,6 +94,19 @@
     padding: 13px 15px;
 }
 
+.form-label__control:focus:invalid {
+    outline: 2px solid #ff8282;
+}
+
+.form-label__control:hover {
+    border: 1px solid #cdcdcd;
+}
+
+.form-label__control:active,
+.form-label__control:focus {
+    outline: 2px solid #444444;
+}
+
 .form-type {
     position: relative;
     display: block;
@@ -104,6 +117,10 @@
     font-size: 16px;
     color: #222222;
     text-transform: uppercase;
+}
+
+.form-type:active {
+    opacity: 0.3;
 }
 
 .form-field--line {
@@ -291,8 +308,8 @@
 @media (min-width: 1300px) {
     .form__column {
         width: 570px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 40px;
+        padding-left: 20px;
     }
 
     .form-label__control {
@@ -304,8 +321,12 @@
     .form-field--line {
         margin-left: 0;
         margin-right: 0;
-        padding: 25px;
+        padding: 25px 25px 10px;
         border: 1px solid #e6e6e6;
+    }
+
+    .form-label {
+        margin-bottom: 6px;
     }
 
     .form__button {
