@@ -12,16 +12,46 @@
     margin: 0 16px;
 }
 
+.social__icon {
+    fill: #666666;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.social__icon:hover {
+    fill: #68b738;
+}
+
+.social__icon:active {
+    opacity: 0.3;
+}
+
 @media (min-width: 768px) {
     .social {
         margin: 0;
         padding: 0 17px;
         border-bottom: none;
     }
+
+    .social__icon--vk {
+        width: 31px;
+        height: 19px;
+    }
+
+    .social__icon--insta {
+        width: 23px;
+        height: 23px;
+    }
+
+    .social__icon--fb {
+        width: 14px;
+        height: 28px;
+    }
 }
 
 @media (min-width: 1300px) {
     .social {
-        padding: 30px 120px;
+        padding-left: 62px;
+        padding-right: 150px;
     }
 }
