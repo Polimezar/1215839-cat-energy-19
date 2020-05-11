@@ -9,6 +9,10 @@
     max-width: inherit;
 }
 
+.comparisons__img--after {
+    display: none;
+}
+
 .comparisons__range {
     display: flex;
     justify-content: space-between;
@@ -73,6 +77,18 @@
         right: 0;
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .comparisons__img--after {
+        display: block;
+    }
+
+    .comparisons__img--before {
+        clip: rect(auto, 345px, auto, auto);
+    }
+
+    .comparisons__img--after {
+        clip: rect(auto, auto, auto, 345px);
     }
 
     .comparisons__range {

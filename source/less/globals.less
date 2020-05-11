@@ -35,6 +35,11 @@ a {
     margin-right: auto;
 }
 
+*::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 @media (min-width: 768px) {
     .wrapper {
         width: 708px;

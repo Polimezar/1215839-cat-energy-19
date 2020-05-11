@@ -21,6 +21,12 @@
     background-position: bottom;
     background-repeat: no-repeat;
     z-index: -1;
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .page-header--preview::after {
+            background-image: url(../img/index-background-mobile@2x.jpg);
+        }
+    }
 }
 
 .page-header__logo-image {
@@ -110,7 +116,6 @@
     transform: rotate3d(0, 0, 1, -45deg);
 }
 
-
 @media (min-width: 768px) {
     .page-header__wrapper {
         padding-left: 30px;
@@ -158,6 +163,11 @@
         background-position: 0%;
         background-repeat: no-repeat;
         background-size: cover;
+        @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
+            .page-header--preview::after {
+              background-image: url("../img/index-background-desktop@2x.jpg"); 
+            } 
+        }
     }
 
     .page-header--preview .main-nav__list--link {
