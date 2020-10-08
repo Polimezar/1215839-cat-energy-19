@@ -1,0 +1,122 @@
+.additionally {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.additionally__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+
+  &:last-child {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.additionally__title {
+  width: 280px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additionally__info {
+  width: 280px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  line-height: 1;
+  padding-bottom: 15px;
+}
+
+.additionally__info td:last-child {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .additionally {
+    width: 708px;
+    padding-right: 30px;
+    margin: 0;
+    list-style-type: none;
+    border: none;
+  }
+
+  .additionally__item {
+    border: 1px solid #d9d9d9;
+    border-bottom: 0;
+    padding: 28px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additionally__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .additionally__info {
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+
+  .additionally__button {
+    width: 633px;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+
+  .additionally__info td:first-child {
+    text-align: right;
+  }
+
+  .additionally__info td:last-child {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .additionally {
+    width: 895px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .additionally__item {
+    min-height: 38px;
+    border-left: none;
+    padding: 16px 0 17px;
+    align-items: center;
+    border-right: none;
+  }
+
+  .additionally__title {
+    font-size: 20px;
+    margin: 0;
+    margin-right: 30px;
+    width: 245px;
+  }
+
+  .additionally__info {
+    width: 290px;
+    padding-bottom: 0;
+    padding-left: 5px;
+  }
+
+  .additionally__button {
+    max-width: 27.5%;
+    margin: 0;
+  }
+
+  .additionally__info td:first-child {
+    text-align: left;
+  }
+}

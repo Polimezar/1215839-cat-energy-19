@@ -1,0 +1,127 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 22px;
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #d9d9d9;
+  width: calc(100% + 40px);
+}
+
+.product__description {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.product__title {
+  color: #111111;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__options {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 16px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  padding-bottom: 23px;
+}
+
+.product__options td:last-child {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .product {
+    width: 244px;
+    min-height: 352px;
+    padding: 40px;
+    background-color: #f2f2f2;
+  }
+
+  .product__image {
+    margin: -120px -40px;
+    padding-bottom: 50px;
+  }
+
+  .product__description {
+    flex: 100%;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 60px;
+  }
+
+  .product__title {
+    font-size: 20px;
+    margin: 43px auto 19px;
+    width: 158px;
+    text-align: center;
+  }
+
+  .product__options {
+    margin-bottom: 32px;
+  }
+
+  .product__options td {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .product__options tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__options td:last-child {
+    text-align: right;
+  }
+
+  .product::after {
+    display: none;
+  }
+
+  .button__product {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .product {
+    width: 165px;
+    min-height: 431px;
+    padding: 0 40px;
+  }
+
+  .product__image {
+    margin: -159px -41px;
+  }
+
+  .product__title {
+    min-height: 38px;
+    padding-top: 45px;
+    padding-left: 0;
+  }
+
+  .product__options {
+    margin-bottom: -14px;
+  }
+
+  .product__options tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__description {
+    padding-top: 14px;
+  }
+}

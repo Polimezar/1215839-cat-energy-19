@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Osward", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.wrapper {
+  width: 280px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wrapper {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

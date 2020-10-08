@@ -1,0 +1,152 @@
+.program__title {
+  min-height: 21px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #111111;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 37px;
+  padding-left: 70px;
+  text-transform: uppercase;
+}
+
+.program__text {
+  min-height: 86px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  color: #444444;
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__catalog {
+  width: 88px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  color: #111111;
+  margin: 0;
+  padding-right: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.program__catalog:active {
+  opacity: 0.3;
+}
+
+.program__catalog:hover::after {
+  right: -26px;
+}
+
+.program__catalog::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  width: 23px;
+  height: 12px;
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.program__illustration {
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  min-height: 50px;
+  background: #68b738;
+  border-radius: 50%;
+}
+
+.program__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .program__title {
+    min-height: 36px;
+    font-size: 36px;
+    line-height: 1.03;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+  }
+
+  .program__text {
+    width: 383px;
+    min-height: 88px;
+    font-family: "Arial", "Tahoma", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    margin-bottom: 26px;
+    line-height: 1.5;
+    border: none;
+  }
+
+  .program__catalog {
+    width: 130px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 11px;
+  }
+
+  .program__illustration {
+    right: 60px;
+    top: 90px;
+    width: 200px;
+    min-height: 200px;
+  }
+
+  .program__icon--slim {
+    top: 42%;
+    width: 69%;
+    height: 100%;
+  }
+
+  .program__icon--pro {
+    width: 133%;
+    height: 100%;
+  }
+
+  .program__catalog::after {
+    right: -23px;
+    top: 69%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .program__title {
+    padding-left: 0;
+    margin-bottom: 70px;
+  }
+
+  .program__text {
+    width: 463px;
+    padding-bottom: 1px;
+    margin: 0;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .program__catalog {
+    width: 127px;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .program__illustration {
+    top: 45px;
+    light: inherit;
+    min-height: 100px;
+    width: 100px;
+  }
+}

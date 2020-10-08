@@ -1,0 +1,48 @@
+.programs-list__wrapper {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programs-list__items {
+  position: relative;
+  width: 280px;
+  margin-top: 22px;
+  padding: 40px 20px 20px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .programs-list__wrapper {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .programs-list__items {
+    width: 341px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    padding: 74px 315px 68px 52px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .programs-list__wrapper {
+    width: 1300px;
+    padding: 0;
+    flex-wrap: inherit;
+  }
+
+  .programs-list__items {
+    width: 570px;
+    margin-left: 40px;
+    padding: 74px 53px 58px;
+    margin-right: 40px;
+  }
+}

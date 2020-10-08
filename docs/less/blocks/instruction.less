@@ -1,0 +1,206 @@
+.instruction__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instruction__title {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.67;
+  color: #111111;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.instruction__list {
+  padding-top: 30px;
+  padding-left: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  counter-reset: section;
+}
+
+.instruction__item {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.instruction__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-size: 50px;
+}
+
+.instruction__item--healthy::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .instruction__item--healthy::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+}
+
+.instruction__item--easy::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .instruction__item--easy::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+}
+
+.instruction__item--food::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .instruction__item--dining::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+}
+
+.instruction__item--time::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .instruction__item--clock::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+}
+
+.instruction__text {
+  font-family: "Arial", "Tahoma", sans-serif;
+  margin: 0;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .instruction__wrapper {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 1;
+    padding-top: 35px;
+    padding-bottom: 42px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 0;
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .instruction__item {
+    max-width: 50%;
+    min-height: 230px;
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    padding-right: 108px;
+    padding-bottom: 87px;
+  }
+
+  .instruction__item::before {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 35px;
+  }
+
+  .instruction__text {
+    width: 246px;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 0;
+    font-family: "Arial", "Tahoma", sans-serif;
+    line-height: 1.5;
+  }
+
+  .instruction__item::after {
+    counter-increment: section;
+    content: counter(section) "";
+    position: absolute;
+    left: 144px;
+    top: -38px;
+    font-size: 280px;
+    line-height: 1;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .instruction__wrapper {
+    width: 1220px;
+    min-height: 433px;
+    border-bottom: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .instruction__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
+  .instruction__title {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+
+  .instruction__item {
+    width: 245px;
+    min-height: 230px;
+    display: block;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
+
+  .instruction__text {
+    font-size: 16px;
+    margin: 0;
+    padding-left: 0;
+    font-family: "Arial", "Tahoma", sans-serif;
+    padding-top: 28px;
+    padding-right: 85px;
+    line-height: 1.5;
+  }
+
+  .instruction__item::after {
+    left: 155px;
+  }
+
+  .instruction__item::before {
+    margin-bottom: 5px;
+  }
+}
